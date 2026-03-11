@@ -1,11 +1,11 @@
-Given : array of integers named nums.
+/* Given : array of integers named nums.
 Task : we have to return a array of integers which are the product of the all other numbers in nums except nums[i].
 Topics : Prefix products,arrays.
 Approach : Here for finding the product of array except self.
 1. we have to find the prefix products until the before number and also suffix products also we have to find and we have to store these numbers in the array.
 2. Now we have to product these two arrays so that we will get the actual result that we want.
-
-Source Code:
+*/
+// Source Code:
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int[] prefix = new int[nums.length]; // prefix products
