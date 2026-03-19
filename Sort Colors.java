@@ -34,3 +34,27 @@ class Solution {
     }
 }
 // 2nd approach
+class Solution {
+    public void sortColors(int[] nums) {
+        int left =0,right=nums.length;
+        int count =0;
+        for(int i =0;i<nums.length;i++){
+            if(nums[i]==0){
+                nums[left]=0;
+                left++;
+            }if(nums[i]==1){
+                count++;
+            }
+        }
+        while(left<right){
+            if(count>0){
+                nums[left]=1;
+                left++;
+                count--;
+                continue;
+            }
+            nums[left]=2;
+            left++;
+        }
+    }
+}
