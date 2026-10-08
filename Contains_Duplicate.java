@@ -1,3 +1,9 @@
+/*
+    Problem: Contains duplicate 2
+    Algorithm: 
+
+*/
+import java.util.*;
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         HashSet<Integer> set = new HashSet<>();
