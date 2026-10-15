@@ -1,3 +1,12 @@
+/*
+    Problem: maximum sum of distinct subarrays with length k
+    Algorithm:
+    1. we have to use the fixed sliding window concept
+    2. we have to insert one by one element in the window and check the 
+    condition for it is meeting the exact k elements in the window
+    3. we will look for the duplicate elements are present or not
+    4. we will update the max_sum of the subarrays.
+*/
 
 class Solution {
     public long maximumSubarraySum(int[] nums, int k) {
